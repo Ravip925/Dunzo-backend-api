@@ -47,7 +47,7 @@ router.post("/paymentverification", async(req, res) => {
     });
 
     res.redirect(
-      `http://localhost:3000/success?reference=${razorpay_payment_id}`
+      `https://dunzo-grocery-app.netlify.app/success?reference=${razorpay_payment_id}`
     );
   } else {
     res.status(400).json({
