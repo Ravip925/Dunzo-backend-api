@@ -54,7 +54,7 @@ router.get('/search/:name', async (req, res) => {
     res.json(products);
   } catch (err) {
     console.error(err);
-    res.status(500).send('Server error');
+    res.status(500).json(err.message);
   }
 });
 
